@@ -339,3 +339,152 @@ conda install --file requirements.txt
     zstd-1.3.7                 |       h0b5b093_0         401 KB
     
 ```
+
+
+```bash
+(superquadric_parsingPy3) luod@kw60995:~/proteinSimplify/official_py3/superquadric_parsing$ conda list
+# packages in environment at /home/luod/.conda/envs/superquadric_parsingPy3:
+#
+# Name                    Version                   Build  Channel
+_libgcc_mutex             0.1                        main
+_openmp_mutex             5.1                       1_gnu
+apptools                  5.1.0              pyhd3eb1b0_0
+backports                 1.1                pyhd3eb1b0_0
+backports.functools_lru_cache 1.6.4              pyhd3eb1b0_0
+blas                      1.0                         mkl
+bottleneck                1.3.5            py37h7deecbd_0
+brotli                    1.0.9                h5eee18b_7
+brotli-bin                1.0.9                h5eee18b_7
+bzip2                     1.0.8                h7b6447c_0
+c-ares                    1.18.1               h7f8727e_0
+ca-certificates           2023.01.10           h06a4308_0
+certifi                   2022.12.7        py37h06a4308_0
+cffi                      1.15.1           py37h5eee18b_3
+configobj                 5.0.6            py37h06a4308_1
+cuda90                    1.0                  h6433d27_0    pytorch
+curl                      7.87.0               h5eee18b_0
+cycler                    0.11.0             pyhd3eb1b0_0
+cython                    0.29.32          py37h6a678d5_0
+dbus                      1.13.18              hb2f20db_0
+envisage                  6.0.1              pyhd3eb1b0_0
+expat                     2.4.9                h6a678d5_0
+flit-core                 3.6.0              pyhd3eb1b0_0
+fontconfig                2.14.1               h52c9d5c_1
+fonttools                 4.25.0             pyhd3eb1b0_0
+freetype                  2.12.1               h4a9f257_0
+future                    0.18.2                   py37_1
+giflib                    5.2.1                h5eee18b_1
+glib                      2.69.1               he621ea3_2
+gmp                       6.2.1                h295c915_3
+gmpy2                     2.1.2            py37heeb90bb_0
+gst-plugins-base          1.14.0               h8213a91_2
+gstreamer                 1.14.0               h28cd5cc_2
+hdf4                      4.2.13               h3ca952b_2
+hdf5                      1.10.4               hb1b8bf9_0
+icu                       58.2                 he6710b0_3
+intel-openmp              2021.4.0          h06a4308_3561
+joblib                    1.1.1            py37h06a4308_0
+jpeg                      9e                   h7f8727e_0
+jsoncpp                   1.9.4                hff7bd54_2
+kiwisolver                1.4.4            py37h6a678d5_0
+krb5                      1.19.4               h568e23c_0
+lcms2                     2.12                 h3be6417_0
+ld_impl_linux-64          2.38                 h1181459_1
+libbrotlicommon           1.0.9                h5eee18b_7
+libbrotlidec              1.0.9                h5eee18b_7
+libbrotlienc              1.0.9                h5eee18b_7
+libcurl                   7.87.0               h91b91d3_0
+libedit                   3.1.20221030         h5eee18b_0
+libev                     4.33                 h7f8727e_1
+libffi                    3.4.2                h6a678d5_6
+libgcc-ng                 11.2.0               h1234567_1
+libgfortran-ng            7.5.0               ha8ba4b0_17
+libgfortran4              7.5.0               ha8ba4b0_17
+libgomp                   11.2.0               h1234567_1
+libnetcdf                 4.6.1                h11d0813_2
+libnghttp2                1.46.0               hce63b2e_0
+libogg                    1.3.5                h27cfd23_1
+libpng                    1.6.37               hbc83047_0
+libssh2                   1.10.0               h8f2d780_0
+libstdcxx-ng              11.2.0               h1234567_1
+libtheora                 1.1.1                h7f8727e_3
+libtiff                   4.1.0                h2733197_0
+libuuid                   1.41.5               h5eee18b_0
+libvorbis                 1.3.7                h7b6447c_0
+libwebp                   1.2.4                h11a3e52_0
+libwebp-base              1.2.4                h5eee18b_0
+libxcb                    1.15                 h7f8727e_0
+libxml2                   2.9.14               h74e7548_0
+lz4-c                     1.8.1.2              h14c3975_0
+matplotlib                3.5.3            py37h06a4308_0
+matplotlib-base           3.5.3            py37hf590b9c_0
+mayavi                    4.7.1            py37h94891b3_2
+mkl                       2021.4.0           h06a4308_640
+mkl-service               2.4.0            py37h7f8727e_0
+mkl_fft                   1.3.1            py37hd3c417c_0
+mkl_random                1.2.2            py37h51133e4_0
+mpc                       1.1.0                h10f8cd9_1
+mpfr                      4.0.2                hb69a4c5_1
+mpmath                    1.2.1            py37h06a4308_0
+munkres                   1.1.4                      py_0
+ncurses                   6.4                  h6a678d5_0
+networkx                  2.6.3                    pypi_0    pypi
+ninja                     1.10.2               h06a4308_5
+ninja-base                1.10.2               hd09550d_5
+numexpr                   2.8.4            py37he184ba9_0
+numpy                     1.21.5           py37h6c91a56_3
+numpy-base                1.21.5           py37ha15fc14_3
+openssl                   1.1.1t               h7f8727e_0
+packaging                 22.0             py37h06a4308_0
+pandas                    1.3.5            py37h8c16a72_0
+pcre                      8.45                 h295c915_0
+pillow                    9.4.0                    pypi_0    pypi
+pip                       22.3.1           py37h06a4308_0
+progress                  1.4                      py37_0
+pycparser                 2.21               pyhd3eb1b0_0
+pyface                    7.3.0            py37h06a4308_1
+pygments                  2.11.2             pyhd3eb1b0_0
+pyparsing                 3.0.9            py37h06a4308_0
+pyqt                      5.9.2            py37h05f1152_2
+pyquaternion              0.9.5                    pypi_0    pypi
+python                    3.7.16               h7a1cb2a_0
+python-dateutil           2.8.2              pyhd3eb1b0_0
+pytorch                   0.4.1           py37_py36_py35_py27__9.0.176_7.1.2_2    pytorch
+pytz                      2022.7           py37h06a4308_0
+qt                        5.9.7                h5867ecd_1
+readline                  8.2                  h5eee18b_0
+scikit-learn              1.0.2            py37h51133e4_1
+scipy                     1.7.3            py37hc147768_0
+seaborn                   0.12.2           py37h06a4308_0
+setuptools                65.6.3           py37h06a4308_0
+sip                       4.19.8           py37hf484d3e_0
+six                       1.16.0             pyhd3eb1b0_1
+sqlite                    3.40.1               h5082296_0
+sympy                     1.10.1           py37h06a4308_0
+tbb                       2021.6.0             hdb19cb5_1
+threadpoolctl             2.2.0              pyh0d69192_0
+tk                        8.6.12               h1ccaba5_0
+torchvision               0.1.8                    pypi_0    pypi
+tornado                   6.2              py37h5eee18b_0
+traits                    6.2.0            py37h27cfd23_0
+traitsui                  7.2.1              pyhd3eb1b0_0
+trimesh                   2.38.42                  pypi_0    pypi
+typing_extensions         4.4.0            py37h06a4308_0
+tzdata                    2022g                h04d1e81_0
+vtk                       8.2.0           py37haa4764d_200
+wheel                     0.37.1             pyhd3eb1b0_0
+xz                        5.2.10               h5eee18b_1
+zlib                      1.2.13               h5eee18b_0
+zstd                      1.3.7                h0b5b093_0
+(superquadric_parsingPy3) luod@kw60995:~/proteinSimplify/official_py3/superquadric_parsing$
+(superquadric_parsingPy3) luod@kw60995:~/proteinSimplify/official_py3/superquadric_parsing$
+(superquadric_parsingPy3) luod@kw60995:~/proteinSimplify/official_py3/superquadric_parsing$
+(superquadric_parsingPy3) luod@kw60995:~/proteinSimplify/official_py3/superquadric_parsing$ pip install --user -e .
+Obtaining file:///home/luod/proteinSimplify/official_py3/superquadric_parsing
+  Preparing metadata (setup.py) ... done
+Requirement already satisfied: numpy in /home/luod/.local/lib/python3.7/site-packages (from learnable-primitives==0.1) (1.21.6)
+Requirement already satisfied: scikit-learn in /home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages (from learnable-primitives==0.1) (1.0.2)
+Requirement already satisfied: trimesh==2.38.42 in /home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages (from learnable-primitives==0.1) (2.38.42)
+ERROR: Could not find a version that satisfies the requirement torch==0.4.1 (from learnable-primitives) (from versions: 1.0.0, 1.0.1, 1.0.1.post2, 1.1.0, 1.2.0, 1.3.0, 1.3.1, 1.4.0, 1.5.0, 1.5.1, 1.6.0, 1.7.0, 1.7.1, 1.8.0, 1.8.1, 1.9.0, 1.9.1, 1.10.0, 1.10.1, 1.10.2, 1.11.0, 1.12.0, 1.12.1, 1.13.0, 1.13.1)
+ERROR: No matching distribution found for torch==0.4.1
+```
