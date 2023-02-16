@@ -488,3 +488,103 @@ Requirement already satisfied: trimesh==2.38.42 in /home/luod/.conda/envs/superq
 ERROR: Could not find a version that satisfies the requirement torch==0.4.1 (from learnable-primitives) (from versions: 1.0.0, 1.0.1, 1.0.1.post2, 1.1.0, 1.2.0, 1.3.0, 1.3.1, 1.4.0, 1.5.0, 1.5.1, 1.6.0, 1.7.0, 1.7.1, 1.8.0, 1.8.1, 1.9.0, 1.9.1, 1.10.0, 1.10.1, 1.10.2, 1.11.0, 1.12.0, 1.12.1, 1.13.0, 1.13.1)
 ERROR: No matching distribution found for torch==0.4.1
 ```
+
+Commented out ` # "torch==0.4.1",` in `setup.py`
+
+```bash
+(superquadric_parsingPy3) luod@kw60995:~/proteinSimplify/official_py3/superquadric_parsing$ pip install --user -e .
+Obtaining file:///home/luod/proteinSimplify/official_py3/superquadric_parsing
+  Preparing metadata (setup.py) ... done
+Requirement already satisfied: numpy in /home/luod/.local/lib/python3.7/site-packages (from learnable-primitives==0.1) (1.21.6)
+Requirement already satisfied: scikit-learn in /home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages (from learnable-primitives==0.1) (1.0.2)
+Requirement already satisfied: trimesh==2.38.42 in /home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages (from learnable-primitives==0.1) (2.38.42)
+Requirement already satisfied: torchvision==0.1.8 in /home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages (from learnable-primitives==0.1) (0.1.8)
+Requirement already satisfied: progress==1.4 in /home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages (from learnable-primitives==0.1) (1.4)
+Requirement already satisfied: cython in /home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages (from learnable-primitives==0.1) (0.29.32)
+Requirement already satisfied: Pillow in /home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages (from learnable-primitives==0.1) (9.4.0)
+Requirement already satisfied: pyquaternion in /home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages (from learnable-primitives==0.1) (0.9.5)
+Requirement already satisfied: backports.functools_lru_cache in /home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages (from learnable-primitives==0.1) (1.6.4)
+Requirement already satisfied: sympy in /home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages (from learnable-primitives==0.1) (1.10.1)
+Collecting matplotlib==2.2.4
+  Downloading matplotlib-2.2.4-cp37-cp37m-manylinux1_x86_64.whl (12.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.8/12.8 MB 35.0 MB/s eta 0:00:00
+Requirement already satisfied: seaborn in /home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages (from learnable-primitives==0.1) (0.12.2)
+Requirement already satisfied: mayavi in /home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages (from learnable-primitives==0.1) (4.7.1)
+Requirement already satisfied: kiwisolver>=1.0.1 in /home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages (from matplotlib==2.2.4->learnable-primitives==0.1) (1.4.4)
+Requirement already satisfied: pytz in /home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages (from matplotlib==2.2.4->learnable-primitives==0.1) (2022.7)
+Requirement already satisfied: cycler>=0.10 in /home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages (from matplotlib==2.2.4->learnable-primitives==0.1) (0.11.0)
+Requirement already satisfied: six>=1.10 in /home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages (from matplotlib==2.2.4->learnable-primitives==0.1) (1.16.0)
+Requirement already satisfied: python-dateutil>=2.1 in /home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages (from matplotlib==2.2.4->learnable-primitives==0.1) (2.8.2)
+Requirement already satisfied: pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.1 in /home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages (from matplotlib==2.2.4->learnable-primitives==0.1) (3.0.9)
+Requirement already satisfied: torch in /home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages (from torchvision==0.1.8->learnable-primitives==0.1) (0.4.1.post2)
+Requirement already satisfied: scipy in /home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages (from trimesh==2.38.42->learnable-primitives==0.1) (1.7.3)
+Requirement already satisfied: networkx in /home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages (from trimesh==2.38.42->learnable-primitives==0.1) (2.6.3)
+Requirement already satisfied: traits>=4.6.0 in /home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages (from mayavi->learnable-primitives==0.1) (6.2.0)
+Requirement already satisfied: envisage in /home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages (from mayavi->learnable-primitives==0.1) (6.0.1)
+Requirement already satisfied: apptools in /home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages (from mayavi->learnable-primitives==0.1) (5.1.0)
+Requirement already satisfied: pygments in /home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages (from mayavi->learnable-primitives==0.1) (2.11.2)
+Requirement already satisfied: traitsui>=6.0.0 in /home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages (from mayavi->le
+            [
+                "learnable_primitives/fast_sampler/_sampler.pyx",
+                "learnable_primitives/fast_sampler/sampling.cpp"
+            ],
+            language="c++11",
+            libraries=["stdc++"],
+            include_dirs=[np.get_include()],
+            extra_compile_args=["-std=c++11", "-O3"]
+        )
+    ])
+
+
+def get_install_requirements():
+    return [
+        "numpy",
+        "scikit-learn",
+        "trimesh==2.38.42",
+        # "torch==0.4.1",
+        "torchvision==0.1.8",
+        "progress==1.4",
+        "cython",
+        "Pillow",
+        "pyquaternion",
+        "backports.functools_lru_cache",
+        "sympy",
+        "matplotlib==2.2.4",
+        "seaborn",
+        "mayavi"
+    ]
+
+
+def setup_package():
+    meta = collect_metadata()
+    setup(
+        name="learnable_primitives",
+        version=meta["version"],
+"setup.py" 96L, 2565C                                                                                                      58,10         66%
+arnable-primitives==0.1) (7.2.1)
+Requirement already satisfied: vtk in /home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages (from mayavi->learnable-primitives==0.1) (8.2.0)
+Requirement already satisfied: pyface>=6.1.1 in /home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages (from mayavi->learnable-primitives==0.1) (7.3.0)
+Requirement already satisfied: threadpoolctl>=2.0.0 in /home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages (from scikit-learn->learnable-primitives==0.1) (2.2.0)
+Requirement already satisfied: joblib>=0.11 in /home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages (from scikit-learn->learnable-primitives==0.1) (1.1.1)
+Collecting seaborn
+  Downloading seaborn-0.12.1-py3-none-any.whl (288 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 288.2/288.2 kB 47.3 MB/s eta 0:00:00
+  Downloading seaborn-0.12.0-py3-none-any.whl (285 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 285.1/285.1 kB 50.0 MB/s eta 0:00:00
+  Downloading seaborn-0.11.2-py3-none-any.whl (292 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 292.8/292.8 kB 49.6 MB/s eta 0:00:00
+Requirement already satisfied: pandas>=0.23 in /home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages (from seaborn->learnable-primitives==0.1) (1.3.5)
+Requirement already satisfied: mpmath>=0.19 in /home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages (from sympy->learnable-primitives==0.1) (1.2.1)
+Requirement already satisfied: typing-extensions in /home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages (from kiwisolver>=1.0.1->matplotlib==2.2.4->learnable-primitives==0.1) (4.4.0)
+Collecting importlib-metadata
+  Downloading importlib_metadata-6.0.0-py3-none-any.whl (21 kB)
+Collecting importlib-resources>=1.1.0
+  Downloading importlib_resources-5.10.2-py3-none-any.whl (34 kB)
+Requirement already satisfied: configobj in /home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages (from apptools->mayavi->learnable-primitives==0.1) (5.0.6)
+Requirement already satisfied: setuptools in /home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages (from envisage->mayavi->learnable-primitives==0.1) (65.6.3)
+Collecting zipp>=3.1.0
+  Downloading zipp-3.13.0-py3-none-any.whl (6.7 kB)
+Installing collected packages: zipp, matplotlib, importlib-resources, importlib-metadata, seaborn, learnable-primitives
+  Running setup.py develop for learnable-primitives
+Successfully installed importlib-metadata-6.0.0 importlib-resources-5.10.2 learnable-primitives matplotlib-2.2.4 seaborn-0.11.2 zipp-3.13.0
+```
