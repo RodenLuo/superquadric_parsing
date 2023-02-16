@@ -215,3 +215,24 @@ conda install pytorch==0.4.1 cuda90 -c pytorch
 ```
 
 
+```bash
+(superquadric_parsingPy3) luod@kw60995:~/proteinSimplify/official_py3/superquadric_parsing$ pip install https://github.com/pytorch/vision/archive/refs/tags/v0.1.8.tar.gz
+Collecting https://github.com/pytorch/vision/archive/refs/tags/v0.1.8.tar.gz
+  Downloading https://github.com/pytorch/vision/archive/refs/tags/v0.1.8.tar.gz
+     / 252.1 kB 826.8 kB/s 0:00:00
+  Preparing metadata (setup.py) ... done
+Requirement already satisfied: numpy in /home/luod/.local/lib/python3.7/site-packages (from torchvision==0.1.8) (1.21.6)
+Collecting pillow
+  Downloading Pillow-9.4.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 6.5 MB/s eta 0:00:00
+Requirement already satisfied: six in /home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages (from torchvision==0.1.8) (1.16.0)
+Requirement already satisfied: torch in /home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages (from torchvision==0.1.8) (0.4.1.post2)
+Building wheels for collected packages: torchvision
+  Building wheel for torchvision (setup.py) ... done
+  Created wheel for torchvision: filename=torchvision-0.1.8-py2.py3-none-any.whl size=33449 sha256=e0cc1e83b227d526ebd01a9ae99b1b222bb7a3f874995fc2dcdf368697efbba6
+  Stored in directory: /tmp/pip-ephem-wheel-cache-2mlfh0lu/wheels/0d/ac/38/770c9f4ba9569390b98cb6befce237783062e020ca30f92319
+Successfully built torchvision
+Installing collected packages: pillow, torchvision
+Successfully installed pillow-9.4.0 torchvision-0.1.8
+
+```
