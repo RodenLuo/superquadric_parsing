@@ -29,3 +29,12 @@ ERROR: No matching distribution found for torch==0.4.1
 
 
 ```
+
+comment out `torch` in `requirements.txt` gets `Downloading torch-1.13.1`
+
+```
+
+```
+
+Keep going in these versions and see if the code can be run
+
