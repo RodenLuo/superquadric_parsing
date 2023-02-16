@@ -191,3 +191,27 @@ Failed to build mayavi
 ERROR: Could not build wheels for mayavi, which is required to install pyproject.toml-based projects
 ```
 
+
+```
+conda install pytorch==0.4.1 cuda90 -c pytorch
+
+    certifi-2022.12.7          |   py37h06a4308_0         150 KB
+    cffi-1.15.1                |   py37h5eee18b_3         240 KB
+    cuda90-1.0                 |       h6433d27_0           3 KB  pytorch
+    mkl-service-2.4.0          |   py37h7f8727e_0          56 KB
+    mkl_fft-1.3.1              |   py37hd3c417c_0         172 KB
+    mkl_random-1.2.2           |   py37h51133e4_0         287 KB
+    ninja-1.10.2               |       h06a4308_5           8 KB
+    ninja-base-1.10.2          |       hd09550d_5         109 KB
+    numpy-1.21.5               |   py37h6c91a56_3          10 KB
+    numpy-base-1.21.5          |   py37ha15fc14_3         4.8 MB
+    pip-22.3.1                 |   py37h06a4308_0         2.7 MB
+    pycparser-2.21             |     pyhd3eb1b0_0          94 KB
+    python-3.7.16              |       h7a1cb2a_0        44.8 MB
+    pytorch-0.4.1              |py37_py36_py35_py27__9.0.176_7.1.2_2       471.7 MB  pytorch
+    setuptools-65.6.3          |   py37h06a4308_0         1.1 MB
+    six-1.16.0                 |     pyhd3eb1b0_1          18 KB
+    
+```
+
+
