@@ -588,3 +588,166 @@ Installing collected packages: zipp, matplotlib, importlib-resources, importlib-
   Running setup.py develop for learnable-primitives
 Successfully installed importlib-metadata-6.0.0 importlib-resources-5.10.2 learnable-primitives matplotlib-2.2.4 seaborn-0.11.2 zipp-3.13.0
 ```
+
+
+```bash
+(superquadric_parsingPy3) luod@kw60995:~/proteinSimplify/official_py3/superquadric_parsing$ git checkout port_py3
+(superquadric_parsingPy3) luod@kw60995:~/proteinSimplify/official_py3/superquadric_parsing/scripts$ ./forward_pass.py ../demo/03001627/ /tmp/ --model_tag "dac4af24e2facd7d3000ca4b04fcd6ac" --n_primitives 18 --weight_file ../config/chair_T26AK2FES_model_699 --train_with_bernoulli --use_deformations --use_sq --dataset_type shapenet_v2
+shapely.geometry.Polygon not available!
+Traceback (most recent call last):
+  File "/home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages/trimesh/creation.py", line 22, in <module>
+    from shapely.geometry import Polygon
+ModuleNotFoundError: No module named 'shapely'
+Traceback (most recent call last):
+  File "/home/luod/.local/lib/python3.7/site-packages/importlib_metadata/__init__.py", line 288, in __getitem__
+    return next(iter(self.select(name=name)))
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./forward_pass.py", line 31, in <module>
+    from mayavi import mlab
+  File "/home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages/mayavi/mlab.py", line 16, in <module>
+    from mayavi.tools.camera import view, roll, yaw, pitch, move
+  File "/home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages/mayavi/tools/camera.py", line 24, in <module>
+    from .engine_manager import get_engine
+  File "/home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages/mayavi/tools/engine_manager.py", line 12, in <module>
+    from mayavi.preferences.api import preference_manager
+  File "/home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages/mayavi/preferences/api.py", line 4, in <module>
+    from .preference_manager import preference_manager
+  File "/home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages/mayavi/preferences/preference_manager.py", line 29, in <module>
+    from traitsui.api import View, Group, Item
+  File "/home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages/traitsui/api.py", line 256, in <module>
+    from .editors.api import ArrayEditor
+  File "/home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages/traitsui/editors/__init__.py", line 16, in <module>
+    from .api import ArrayEditor
+  File "/home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages/traitsui/editors/api.py", line 86, in <module>
+    from .code_editor import CodeEditor
+  File "/home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages/traitsui/editors/code_editor.py", line 21, in <module>
+    class CodeEditor(EditorFactory):
+  File "/home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages/traitsui/editors/code_editor.py", line 33, in CodeEditor
+    mark_color = Color(0xECE9D8)
+  File "/home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages/traits/trait_factory.py", line 40, in __call__
+    return self.maker_function(*args, **metadata)
+  File "/home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages/traitsui/toolkit_traits.py", line 43, in ColorTrait
+    return toolkit().color_trait(*args, **traits)
+  File "/home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages/traitsui/toolkit.py", line 110, in toolkit
+    _toolkit = find_toolkit("traitsui.toolkits")
+  File "/home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages/pyface/base_toolkit.py", line 285, in find_toolkit
+    plugin for plugin in importlib_metadata.entry_points()[entry_point]
+  File "/home/luod/.local/lib/python3.7/site-packages/importlib_metadata/__init__.py", line 290, in __getitem__
+    raise KeyError(name)
+KeyError: 'traitsui.toolkits'
+
+```
+
+
+```bash
+(superquadric_parsingPy3) luod@kw60995:~/proteinSimplify/official_py3/superquadric_parsing/scripts$ conda install -c conda-forge shapely
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.10.3
+  latest version: 23.1.0
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: /home/luod/.conda/envs/superquadric_parsingPy3
+
+  added / updated specs:
+    - shapely
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    ca-certificates-2022.12.7  |       ha878542_0         143 KB  conda-forge
+    certifi-2022.12.7          |     pyhd8ed1ab_0         147 KB  conda-forge
+    geos-3.10.2                |       h9c3ff4c_0         1.6 MB  conda-forge
+    python_abi-3.7             |          2_cp37m           4 KB  conda-forge
+    shapely-1.8.1              |   py37h8998c72_0         352 KB  conda-forge
+    ------------------------------------------------------------
+                                           Total:         2.2 MB
+
+The following NEW packages will be INSTALLED:
+
+  geos               conda-forge/linux-64::geos-3.10.2-h9c3ff4c_0
+  python_abi         conda-forge/linux-64::python_abi-3.7-2_cp37m
+  shapely            conda-forge/linux-64::shapely-1.8.1-py37h8998c72_0
+
+The following packages will be SUPERSEDED by a higher-priority channel:
+
+  ca-certificates    pkgs/main::ca-certificates-2023.01.10~ --> conda-forge::ca-certificates-2022.12.7-ha878542_0
+  certifi            pkgs/main/linux-64::certifi-2022.12.7~ --> conda-forge/noarch::certifi-2022.12.7-pyhd8ed1ab_0
+
+
+Proceed ([y]/n)?
+
+
+Downloading and Extracting Packages
+geos-3.10.2          | 1.6 MB    | ################################################################################################## | 100%
+ca-certificates-2022 | 143 KB    | ################################################################################################## | 100%
+certifi-2022.12.7    | 147 KB    | ################################################################################################## | 100%
+python_abi-3.7       | 4 KB      | ################################################################################################## | 100%
+shapely-1.8.1        | 352 KB    | ################################################################################################## | 100%
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+```
+
+
+```bash
+(superquadric_parsingPy3) luod@kw60995:~/proteinSimplify/official_py3/superquadric_parsing/scripts$ ./forward_pass.py ../demo/03001627/ /tmp/ --model_tag "dac4af24e2facd7d3000ca4b04fcd6ac" --n_primitives 18 --weight_file ../config/chair_T26AK2FES_model_699 --train_with_bernoulli --use_deformations --use_sq --dataset_type shapenet_v2
+Traceback (most recent call last):
+  File "/home/luod/.local/lib/python3.7/site-packages/importlib_metadata/__init__.py", line 288, in __getitem__
+    return next(iter(self.select(name=name)))
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./forward_pass.py", line 31, in <module>
+    from mayavi import mlab
+  File "/home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages/mayavi/mlab.py", line 16, in <module>
+    from mayavi.tools.camera import view, roll, yaw, pitch, move
+  File "/home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages/mayavi/tools/camera.py", line 24, in <module>
+    from .engine_manager import get_engine
+  File "/home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages/mayavi/tools/engine_manager.py", line 12, in <module>
+    from mayavi.preferences.api import preference_manager
+  File "/home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages/mayavi/preferences/api.py", line 4, in <module>
+    from .preference_manager import preference_manager
+  File "/home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages/mayavi/preferences/preference_manager.py", line 29, in <module>
+    from traitsui.api import View, Group, Item
+  File "/home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages/traitsui/api.py", line 256, in <module>
+    from .editors.api import ArrayEditor
+  File "/home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages/traitsui/editors/__init__.py", line 16, in <module>
+    from .api import ArrayEditor
+  File "/home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages/traitsui/editors/api.py", line 86, in <module>
+    from .code_editor import CodeEditor
+  File "/home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages/traitsui/editors/code_editor.py", line 21, in <module>
+    class CodeEditor(EditorFactory):
+  File "/home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages/traitsui/editors/code_editor.py", line 33, in CodeEditor
+    mark_color = Color(0xECE9D8)
+  File "/home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages/traits/trait_factory.py", line 40, in __call__
+    return self.maker_function(*args, **metadata)
+  File "/home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages/traitsui/toolkit_traits.py", line 43, in ColorTrait
+    return toolkit().color_trait(*args, **traits)
+  File "/home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages/traitsui/toolkit.py", line 110, in toolkit
+    _toolkit = find_toolkit("traitsui.toolkits")
+  File "/home/luod/.conda/envs/superquadric_parsingPy3/lib/python3.7/site-packages/pyface/base_toolkit.py", line 285, in find_toolkit
+    plugin for plugin in importlib_metadata.entry_points()[entry_point]
+  File "/home/luod/.local/lib/python3.7/site-packages/importlib_metadata/__init__.py", line 290, in __getitem__
+    raise KeyError(name)
+KeyError: 'traitsui.toolkits'
+```
+
