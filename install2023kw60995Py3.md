@@ -236,3 +236,106 @@ Installing collected packages: pillow, torchvision
 Successfully installed pillow-9.4.0 torchvision-0.1.8
 
 ```
+
+
+```
+pip install https://github.com/KieranWynn/pyquaternion/archive/refs/tags/v0.9.5.tar.gz https://github.com/mikedh/trimesh/archive/refs/tags/2.38.42.tar.gz
+
+(superquadric_parsingPy3) luod@kw60995:~/proteinSimplify/official_py3/superquadric_parsing$ cat requirements.txt
+# torch==0.4.1
+# torchvision==0.1.8
+progress==1.4
+# trimesh==2.38.42
+
+numpy
+scikit-learn
+Cython
+Pillow
+# pyquaternion
+backports.functools_lru_cache
+sympy
+
+# Visualization
+matplotlib
+seaborn
+mayavi
+
+conda install --file requirements.txt
+
+    apptools-5.1.0             |     pyhd3eb1b0_0         123 KB
+    backports-1.1              |     pyhd3eb1b0_0           4 KB
+    backports.functools_lru_cache-1.6.4|     pyhd3eb1b0_0           9 KB
+    bottleneck-1.3.5           |   py37h7deecbd_0         115 KB
+    brotli-1.0.9               |       h5eee18b_7          18 KB
+    brotli-bin-1.0.9           |       h5eee18b_7          19 KB
+    c-ares-1.18.1              |       h7f8727e_0         114 KB
+    configobj-5.0.6            |   py37h06a4308_1         289 KB
+    curl-7.87.0                |       h5eee18b_0          88 KB
+    cycler-0.11.0              |     pyhd3eb1b0_0          12 KB
+    cython-0.29.32             |   py37h6a678d5_0         1.9 MB
+    envisage-6.0.1             |     pyhd3eb1b0_0         167 KB
+    expat-2.4.9                |       h6a678d5_0         156 KB
+    flit-core-3.6.0            |     pyhd3eb1b0_0          42 KB
+    fontconfig-2.14.1          |       h52c9d5c_1         281 KB
+    freetype-2.12.1            |       h4a9f257_0         626 KB
+    future-0.18.2              |           py37_1         631 KB
+    giflib-5.2.1               |       h5eee18b_1          75 KB
+    glib-2.69.1                |       he621ea3_2         1.9 MB
+    gmp-6.2.1                  |       h295c915_3         544 KB
+    gmpy2-2.1.2                |   py37heeb90bb_0         188 KB
+    hdf4-4.2.13                |       h3ca952b_2         714 KB
+    hdf5-1.10.4                |       hb1b8bf9_0         3.9 MB
+    joblib-1.1.1               |   py37h06a4308_0         379 KB
+    jpeg-9e                    |       h7f8727e_0         240 KB
+    jsoncpp-1.9.4              |       hff7bd54_2         150 KB
+    kiwisolver-1.4.4           |   py37h6a678d5_0          74 KB
+    krb5-1.19.4                |       h568e23c_0         1.3 MB
+    libbrotlicommon-1.0.9      |       h5eee18b_7          70 KB
+    libbrotlidec-1.0.9         |       h5eee18b_7          31 KB
+    libbrotlienc-1.0.9         |       h5eee18b_7         264 KB
+    libcurl-7.87.0             |       h91b91d3_0         373 KB
+    libedit-3.1.20221030       |       h5eee18b_0         181 KB
+    libev-4.33                 |       h7f8727e_1         111 KB
+    libnetcdf-4.6.1            |       h11d0813_2         833 KB
+    libnghttp2-1.46.0          |       hce63b2e_0         680 KB
+    libogg-1.3.5               |       h27cfd23_1         199 KB
+    libssh2-1.10.0             |       h8f2d780_0         274 KB
+    libtheora-1.1.1            |       h7f8727e_3         338 KB
+    libtiff-4.1.0              |       h2733197_0         447 KB
+    libvorbis-1.3.7            |       h7b6447c_0         398 KB
+    libwebp-1.2.4              |       h11a3e52_0          79 KB
+    libwebp-base-1.2.4         |       h5eee18b_0         347 KB
+    libxcb-1.15                |       h7f8727e_0         505 KB
+    libxml2-2.9.14             |       h74e7548_0         718 KB
+    lz4-c-1.8.1.2              |       h14c3975_0         130 KB
+    matplotlib-3.5.3           |   py37h06a4308_0           7 KB
+    matplotlib-base-3.5.3      |   py37hf590b9c_0         6.4 MB
+    mayavi-4.7.1               |   py37h94891b3_2        12.6 MB
+    mpc-1.1.0                  |       h10f8cd9_1          90 KB
+    mpfr-4.0.2                 |       hb69a4c5_1         487 KB
+    mpmath-1.2.1               |   py37h06a4308_0         775 KB
+    numexpr-2.8.4              |   py37he184ba9_0         133 KB
+    packaging-22.0             |   py37h06a4308_0          68 KB
+    pandas-1.3.5               |   py37h8c16a72_0         9.3 MB
+    pillow-9.3.0               |   py37hace64e9_1         719 KB
+    progress-1.4               |           py37_0          13 KB
+    pyface-7.3.0               |   py37h06a4308_1         1.1 MB
+    pygments-2.11.2            |     pyhd3eb1b0_0         759 KB
+    pyparsing-3.0.9            |   py37h06a4308_0         150 KB
+    pyqt-5.9.2                 |   py37h05f1152_2         4.5 MB
+    pytz-2022.7                |   py37h06a4308_0         207 KB
+    scikit-learn-1.0.2         |   py37h51133e4_1         5.5 MB
+    scipy-1.7.3                |   py37hc147768_0        16.4 MB
+    seaborn-0.12.2             |   py37h06a4308_0         488 KB
+    sip-4.19.8                 |   py37hf484d3e_0         274 KB
+    sympy-1.10.1               |   py37h06a4308_0         9.3 MB
+    tbb-2021.6.0               |       hdb19cb5_1         1.6 MB
+    threadpoolctl-2.2.0        |     pyh0d69192_0          16 KB
+    tornado-6.2                |   py37h5eee18b_0         584 KB
+    traits-6.2.0               |   py37h27cfd23_0         4.9 MB
+    traitsui-7.2.1             |     pyhd3eb1b0_0         854 KB
+    typing_extensions-4.4.0    |   py37h06a4308_0          45 KB
+    vtk-8.2.0                  | py37haa4764d_200        28.4 MB
+    zstd-1.3.7                 |       h0b5b093_0         401 KB
+    
+```
