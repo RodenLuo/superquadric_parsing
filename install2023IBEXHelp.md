@@ -2,11 +2,11 @@
 git clone https://github.com/paschalidoud/superquadric_parsing.git
 export ENV_PREFIX=$PWD/env
 
-mamba create -p $ENV_PREFIX python=2.7
+mamba create -p $ENV_PREFIX python=2.7 mayavi=4.5.0
 
 conda activate $ENV_PREFIX
 
-mamba install pytorch=0.4.1 cuda90 mayavi=4.5.0 traitsui==6.1.1 pyface=6.1.1 scikit-learn cython matplotlib=2.2.4 seaborn pillow -c pytorch -c conda-forge
+mamba install pytorch=0.4.1 cuda90 traitsui==6.1.1 pyface=6.1.1 scikit-learn cython matplotlib=2.2.4 seaborn pillow -c pytorch -c conda-forge
 
 cat requirements.txt
 
