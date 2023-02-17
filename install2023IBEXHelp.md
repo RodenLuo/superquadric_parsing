@@ -61,9 +61,10 @@ According to [this](https://github.com/conda-forge/vtk-feedstock/issues/46#issue
 </p>
 </details>
 
-These two package versions solve the above error
+These two package versions solve the above error 
 ```bash
-mamba install jsoncpp=1.8.3 apptools=4.5
+mamba install jsoncpp=1.8.3 
+mamba install apptools=4.5
 ```
 
 
