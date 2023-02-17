@@ -57,6 +57,8 @@ According to [this](https://github.com/conda-forge/vtk-feedstock/issues/46#issue
 
 ```bash
 mamba install  jsoncpp=1.8.3
+mamba install apptools=4.5
+
 ```
 
 
