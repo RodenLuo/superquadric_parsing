@@ -53,10 +53,10 @@ ________________________________________________________________________________
 Do you have vtk and its Python bindings installed properly?
 ```
 
-According to [this](https://github.com/conda-forge/vtk-feedstock/issues/46#issuecomment-343494640)
+According to [this](https://github.com/conda-forge/vtk-feedstock/issues/46#issuecomment-343494640), and [this](https://mfix.netl.doe.gov/forum/t/cannot-open-vtk-output-file/2862/31)
 
 ```bash
-mamba install jsoncpp=0.10.6 -c conda-forge
+mamba install  jsoncpp=1.8.3
 ```
 
 
