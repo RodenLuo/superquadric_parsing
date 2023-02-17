@@ -6,7 +6,9 @@ mamba create -p $ENV_PREFIX
 
 conda activate $ENV_PREFIX
 
-mamba install python=2.7 mayavi=4.5.0 apptools=4.5.0 pytorch=0.4.1 cuda90 traitsui==6.1.1 pyface=6.1.1 scikit-learn cython matplotlib=2.2.4 seaborn pillow -c pytorch -c conda-forge
+mamba install python=2.7 mayavi=4.5.0
+
+mamba install apptools=4.5.0 pytorch=0.4.1 cuda90 traitsui==6.1.1 pyface=6.1.1 scikit-learn cython matplotlib=2.2.4 seaborn pillow -c pytorch -c conda-forge
 
 cat requirements.txt
 
