@@ -6,11 +6,7 @@ mamba create -p $ENV_PREFIX
 
 conda activate $ENV_PREFIX
 
-mamba install python=2.7 mayavi=4.5.0 
-
-mamba install traitsui==6.1.1 -c conda-forge
-
-mamba install pyface=6.1.1 -c conda-forge
+mamba install python=2.7 mayavi=4.5.0 traitsui==6.1.1 pyface=6.1.1 -c conda-forge
 
 mamba install pytorch=0.4.1 cuda90 scikit-learn cython matplotlib=2.2.4 seaborn pillow -c pytorch -c conda-forge
 
