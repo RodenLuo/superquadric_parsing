@@ -23,6 +23,8 @@ python -m pip install -r requirements.txt
 
 edit the setup.py to make the torch version match (from 0.4.1 -> 0.4.1.post2 )
 
+mamba install apptools=4.5.0
+
 python -m pip install --user -e .
 
 python -c "from mayavi import mlab"
