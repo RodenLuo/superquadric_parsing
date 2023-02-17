@@ -29,6 +29,33 @@ ________________________________________________________________________________
 Do you have vtk and its Python bindings installed properly?
 ```
 
+I do have `/home/luod/proteinSimplify/ibexHelpPy2_2/env/lib/python2.7/site-packages/vtk`, so according to this [hint](https://stackoverflow.com/a/956889)
+```
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/luod/proteinSimplify/ibexHelpPy2_2/env/lib/python2.7/site-packages
+
+$ python -c "from mayavi import mlab"
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/luod/proteinSimplify/ibexHelpPy2_2/env/lib/python2.7/site-packages/mayavi/mlab.py", line 27, in <module>
+    from mayavi.tools.camera import view, roll, yaw, pitch, move
+  File "/home/luod/proteinSimplify/ibexHelpPy2_2/env/lib/python2.7/site-packages/mayavi/tools/camera.py", line 25, in <module>
+    from .engine_manager import get_engine
+  File "/home/luod/proteinSimplify/ibexHelpPy2_2/env/lib/python2.7/site-packages/mayavi/tools/engine_manager.py", line 14, in <module>
+    from mayavi.core.engine import Engine
+  File "/home/luod/proteinSimplify/ibexHelpPy2_2/env/lib/python2.7/site-packages/mayavi/core/engine.py", line 12, in <module>
+    import vtk
+  File "/home/luod/proteinSimplify/ibexHelpPy2_2/env/lib/python2.7/site-packages/vtk/__init__.py", line 112, in <module>
+    from .vtkIOParallel import *
+  File "/home/luod/proteinSimplify/ibexHelpPy2_2/env/lib/python2.7/site-packages/vtk/vtkIOParallel.py", line 9, in <module>
+    from vtkIOParallelPython import *
+ImportError: libjsoncpp.so.0: cannot open shared object file: No such file or directory
+________________________________________________________________________________
+Do you have vtk and its Python bindings installed properly?
+```
+
+
+
+
 Proposed following installation steps once the above successds
 
 ```bash
