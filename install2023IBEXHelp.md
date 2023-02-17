@@ -2,7 +2,7 @@
 git clone https://github.com/paschalidoud/superquadric_parsing.git
 export ENV_PREFIX=$PWD/env
 
-mamba create -p $ENV_PREFIX 
+mamba create -p $ENV_PREFIX python=2.7
 
 conda activate $ENV_PREFIX
 
@@ -10,6 +10,7 @@ mamba install pytorch=0.4.1 cuda90 mayavi traitsui==6.1.1 pyface=6.1.0 scikit-le
 
 cat requirements.txt
 
+pyquaternion
 torchvision==0.1.8
 progress==1.4
 trimesh==2.38.42
