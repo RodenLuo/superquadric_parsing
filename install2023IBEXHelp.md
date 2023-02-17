@@ -30,7 +30,7 @@ Do you have vtk and its Python bindings installed properly?
 ```
 
 I do have `/home/luod/proteinSimplify/ibexHelpPy2_2/env/lib/python2.7/site-packages/vtk`, so according to this [hint](https://stackoverflow.com/a/956889)
-```
+```bash
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/luod/proteinSimplify/ibexHelpPy2_2/env/lib/python2.7/site-packages
 
 $ python -c "from mayavi import mlab"
@@ -53,7 +53,11 @@ ________________________________________________________________________________
 Do you have vtk and its Python bindings installed properly?
 ```
 
+According to [this](https://github.com/conda-forge/vtk-feedstock/issues/46#issuecomment-343494640)
 
+```bash
+mamba install jsoncpp=0.10.6 -c conda-forge
+```
 
 
 Proposed following installation steps once the above successds
