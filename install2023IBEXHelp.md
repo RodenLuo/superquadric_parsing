@@ -61,8 +61,7 @@ mamba install apptools=4.5
 
 ```
 
-
-Proposed following installation steps once the above successds
+Now the above error is gone. 
 
 ```bash
 mamba install pytorch=0.4.1 cuda90 scikit-learn cython matplotlib=2.2.4 seaborn pillow -c pytorch -c conda-forge
@@ -92,4 +91,6 @@ Edit the `setup.py` to make the torch version match (from 0.4.1 -> 0.4.1.post2 )
 python -m pip install -r requirements.txt
 python -m pip install --user -e .
 ```
+
+Testing `superquadric_parsing`
 
