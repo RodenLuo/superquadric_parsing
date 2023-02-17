@@ -35,7 +35,8 @@ python -m pip install --user -e .
 Testing `mayavi` succeeds
 
 ```
-python -c "from mayavi import mlab"
+$ python -c "from mayavi import mlab"
+$ 
 ```
 
 
