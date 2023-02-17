@@ -1,3 +1,5 @@
+### Python 2
+
 ```bash
 git clone https://github.com/paschalidoud/superquadric_parsing.git
 export ENV_PREFIX=$PWD/env
@@ -103,3 +105,5 @@ Testing `superquadric_parsing` succeeds!
 ```bash
 ./forward_pass.py ../demo/03001627/ /tmp/ --model_tag "dac4af24e2facd7d3000ca4b04fcd6ac" --n_primitives 18 --weight_file ../config/chair_T26AK2FES_model_699 --train_with_bernoulli --use_deformations --use_sq --dataset_type shapenet_v2
 ```
+
+[![Image from Gyazo](https://i.gyazo.com/47e9087779d31808fca0757eb50ef6d0.png)](https://gyazo.com/47e9087779d31808fca0757eb50ef6d0)
