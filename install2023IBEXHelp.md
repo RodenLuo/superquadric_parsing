@@ -8,6 +8,9 @@ mamba install python=2.7 mayavi=4.5.0 traitsui==6.1.1 pyface=6.1.1 -c conda-forg
 
 Testing `mayavi` fails
 
+<details><summary>Click to open</summary>
+<p>
+
 ```bash
 $ python -c "from mayavi import mlab"
 Traceback (most recent call last):
@@ -55,13 +58,15 @@ Do you have vtk and its Python bindings installed properly?
 
 According to [this](https://github.com/conda-forge/vtk-feedstock/issues/46#issuecomment-343494640), and [this](https://mfix.netl.doe.gov/forum/t/cannot-open-vtk-output-file/2862/31)
 
-```bash
-mamba install  jsoncpp=1.8.3
-mamba install apptools=4.5
+</p>
+</details>
 
+These two package versions solve the above error
+```bash
+mamba install jsoncpp=1.8.3 apptools=4.5
 ```
 
-Now the above error is gone. 
+
 
 ```bash
 mamba install pytorch=0.4.1 cuda90 scikit-learn cython matplotlib=2.2.4 seaborn pillow -c pytorch -c conda-forge
