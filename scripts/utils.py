@@ -1,9 +1,7 @@
 import pandas as pd
 import pickle
 
-import matplotlib
-matplotlib.use("agg")
-import matplotlib.pyplot as plt
+from functools import reduce
 import seaborn as sns
 sns.set()
 
